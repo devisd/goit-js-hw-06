@@ -6,4 +6,5 @@ inputSymbols.addEventListener("blur", event => {
   event.currentTarget.value.length === inputSymbolsLength
     ? inputSymbols.classList.add("valid")
     : inputSymbols.classList.add("invalid");
+  
 });
