@@ -4,8 +4,9 @@ inputSymbols.addEventListener("blur", onBlur);
 
 function onBlur (event) {
 
-  event.currentTarget.value.length === Number(inputSymbols.dataset.length)
-    ? event.currentTarget.classList = ("valid")
-    : event.currentTarget.classList = ("invalid");
-  
+  if (event.currentTarget.value.length === Number(inputSymbols.dataset.length)) {
+    event.currentTarget.classList = ("valid");
+  } else {
+    event.currentTarget.classList = ("invalid");
+  }
 };
